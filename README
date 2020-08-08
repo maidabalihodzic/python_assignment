@@ -1,0 +1,29 @@
+Python Assignment,
+Klika d.o.o Sarajevo,
+Sarajevo, Bosnia and Herzegovina.
+
+---------------------------------------------
+
+Table of Contents:
+------------------
+ 1) running script
+ 2) code explanation
+ 
+
+1) running script
+
+The script should be run with the following command:
+$python3 interview_solution.py -c NTCG163JF103FT1.csv
+
+2) code explanation
+
+The script has to be run from terminal with one more input argument, it is CSV file. So first, after runnig the script, it has to be checked if command from terminal is correct. It's just checking are there 2 more arguments, not what they are.
+There is one more option, the script can print a help string when called with an optional argument -h or --help.
+When command is correct, called with 2 more arguments, it also needs to be checked the input arguments contain -c as first extra argument and a CSV file as second argument, what we predicted earlier. When it's done, there is one more checking, to make sure CSV file exists. 
+With previous lines we considered all options someone could use to run the script and we made sure script could be run only with one command 1).
+We use the parsed input argument as the file name. In try section, we named an output file using an input file, except an output file is in JSON format. Using for loop we read rows in CVS file and with if statements we try to find temperature which satisfy the conditions stated in the problem formulation. When we find temperature, we make a pair using my_dictionary class. I find this like an easier way to get an output in JSON file as specified. I'm sure there are other ways but I chose this one. Finally, we write in JSON file pairs with 4 spaces indentation.
+
+
+
+
+*Author: Maida Balihodzic <maida.balihodzic@gmail.com>*
